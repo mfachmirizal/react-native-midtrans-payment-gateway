@@ -20,6 +20,6 @@
   },
    "repository": {
     "type": "git",
-    "url": "git+https://github.com/mfachmirizal/react-native-payment-gateway.git"	
+    "url": "git+https://github.com/mfachmirizal/react-native-midtrans-payment-gateway"	
   }
 }
