@@ -1,0 +1,54 @@
+buildscript {
+    repositories {
+        jcenter()
+        google()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.3.1'
+    }
+}
+
+apply plugin: 'com.android.library'
+ 
+android {
+    compileSdkVersion 28
+    buildToolsVersion "28.0.3"
+
+    defaultConfig {
+        minSdkVersion 16
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+    }
+    lintOptions {
+        abortOnError false
+    }
+}
+
+repositories {
+    jcenter()
+    google()
+    // Add the midtrans repository into the list of repositories
+    maven { url "http://dl.bintray.com/pt-midtrans/maven" }
+    maven { url "https://jitpack.io" }
+}
+
+//1.21.2
+//terakhir jalan 1.20.4
+//experimental : 1.22.0
+dependencies {
+    // For using the Veritrans Sandbox
+    // api 'com.midtrans:corekit:1.22.0-SANDBOX'
+
+    // For using the Veritrans Production
+    api 'com.midtrans:corekit:1.22.0'
+
+    // For using the Midtrans Sandbox
+//    api 'com.midtrans:uikit:1.22.0-SANDBOX' // change the number to the latest version
+
+    // For using the Midtrans Production
+    api 'com.midtrans:uikit:1.22.0' // change the number to the latest version
+
+    api 'com.facebook.react:react-native:+'
+}

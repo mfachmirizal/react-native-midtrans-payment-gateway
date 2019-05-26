@@ -1,0 +1,25 @@
+
+{
+  "name": "react-native-midtrans-payment-gateway",
+  "version": "0.4.5",
+  "description": "Midtrans payment gateway forked from 'https://github.com/aldente05/react-native-payment-gateway' ",
+  "main": "index.js",
+  "keywords": [
+    "react-native",
+    "midtrans",
+    "payment",
+    "gateway",
+    "payment gateway"
+  ],
+  "author": "M Fachmi Rizal",
+  "license": "MIT",
+  "peerDependencies": {
+    "react-native": "0.59.8",
+    "react-native-windows": "0.57.0-rc.0"
+
+  },
+   "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mfachmirizal/react-native-payment-gateway.git"	
+  }
+}
