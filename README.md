@@ -41,6 +41,12 @@ change Podfile into this or lastest version
       compile project(':react-native-midtrans-payment-gateway')
   	```
 
+4. Append midtrans repository to application level build.gradle
+    ```
+    maven { url "http://dl.bintray.com/pt-midtrans/maven" }
+    maven { url "https://jitpack.io" }
+    ```
+
 ## Usage
 ```javascript
 import PaymentGateway from 'react-native-midtrans-payment-gateway';
